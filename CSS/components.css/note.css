@@ -1,0 +1,29 @@
+.note-content{
+    border-radius:20px ;
+    margin-top: 100px;
+    background-color: #f4c88b59;
+}
+
+.note-logo{
+    left: -35px;
+}
+.crud-function{
+    display: flex;
+    justify-content: flex-end;
+}
+.crud-function span{
+    margin-left: 10px;
+}
+
+.note-logo{
+    position: relative;
+    padding : 0px !important;
+    margin: 0px !important;
+}
+.note-container{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem !important;
+    max-width: 540px;
+    margin: auto;
+}

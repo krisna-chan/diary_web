@@ -1,0 +1,15 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.bg-orange1{
+    background-color:#FCD59A ;
+}
+.home-page{
+    background-color: #FFFBDA;
+}
+.bg-orange2{
+    background-color:#FFEEA9;
+}

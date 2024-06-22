@@ -1,0 +1,15 @@
+.nav-title-content{
+    margin : 0 auto;
+    padding: 15px;
+}
+.nav-title{
+    text-align: center;
+    font-family:"Playwrite VN", cursive ;
+    font-size:1.6rem;
+}
+
+header{
+    display: flex;
+    height: auto;
+    background-color: #FCD59A ;
+}
