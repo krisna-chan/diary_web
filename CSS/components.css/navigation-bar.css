@@ -3,9 +3,9 @@
     padding: 15px;
 }
 .nav-title{
-    text-align: center;
-    font-family:"Playwrite VN", cursive ;
-    font-size:1.6rem;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size:2.6rem;
 }
 
 header{

@@ -3,14 +3,38 @@
     justify-content: end;
     align-items: flex-end;
 }
-.fixed-button button{
-    width: 50px;
-    height: 50px;
-    background-color: #FF7D29;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 10px;
-    z-index: 1000;
+.fixed-button button {
+    
+    background: #fbca1f;
+    padding: 0.6em 1.3em;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
     cursor: pointer;
+    margin-right: 50px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+
+  }
+  
+#more-note{
+
+    background-color: rgb(153, 145, 145);
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+}
+#more-note.active-note{
+    visibility: visible !important;
+    opacity: 1;
+    transition: 0.2s;
 }

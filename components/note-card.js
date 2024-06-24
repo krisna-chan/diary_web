@@ -37,7 +37,7 @@ noteContainer.forEach((container , index) => {
 
     const spanBin = document.createElement('button')
     const binSvg = document.createElement('img')
-    binSvg.setAttribute('src' , '../assets/icons/trash.svg')
+    binSvg.setAttribute('src' ,  '../assets/icons/trash.svg')
 
     spanBin.setAttribute('type' , 'button')
 

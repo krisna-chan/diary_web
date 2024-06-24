@@ -4,28 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyDiary</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../CSS/components.css/navigation-bar.css">
 <link rel="stylesheet" href="../CSS/components.css/note.css">
 <link rel="stylesheet" href="../CSS/global.css">
 <link rel="stylesheet" href="../CSS/components.css/note.css">
 <link rel="stylesheet" href="./CSS/components.css/add-more-button.css">
+<link rel="stylesheet" href="./CSS/components.css/modal.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body class="home-page">
     <header>
     </header>
-    <main class="note-container">
+    <main class="note-container blury">
+
         <div class="note">
         </div>
+        <div class="note">
+        </div>
+
     </main>
 
+    <section id="more-note" class="">
+        <form action="input">
+            <input type="text">
+        </form>
+    </section>
     <div class="fixed-button">
         <button id="add-more" type="button" class="add-more">
-            add more
+            create more
         </button>
     </div>
+
+    <form class="form">
+  <div class="title">Welcome,<br><span>sign up to continue</span></div>
+  <input class="input" name="email" placeholder="Email" type="email">
+  <input class="input" name="password" placeholder="Password" type="password">
+  <button class="button-confirm">Sign In</button>
+</form>
 </body>
 <script src="../components/navigation-bar.js"></script>
 <script src =  "../components/note-card.js"></script>
