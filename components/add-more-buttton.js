@@ -1,6 +1,7 @@
 const blury = document.getElementsByClassName('blury'); // blury is a collection
 const createNote = document.getElementById('more-note')
 const addMore = document.getElementById("add-more");
+
 addMore.addEventListener("click", () => {
     // Loop through each element with class 'blury' and toggle the 'active' class
     Array.from(blury).forEach(element => {
@@ -8,6 +9,7 @@ addMore.addEventListener("click", () => {
     });
 
     createNote.classList.toggle('active-note')
+    addMore.classList.add('hidden');
 });
 
 let textInput = document.getElementById("textInput");
@@ -33,5 +35,6 @@ closeModal.addEventListener("click" , () => {
     Array.from(blury).forEach(element => {
         element.classList.toggle("active-add-more");
     });
+    addMore.classList.toggle('hidden');
+
 })
-console.log()
