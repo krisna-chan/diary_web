@@ -1,19 +1,21 @@
-const blury = document.getElementsByClassName('blury'); // blury is a collection
+
+const blury      = document.getElementsByClassName('blury'); // blury is a collection
 const createNote = document.getElementById('more-note')
-const addMore = document.getElementById("add-more");
+const addMore    = document.getElementById("add-more");
+
 addMore.addEventListener("click", () => {
     // Loop through each element with class 'blury' and toggle the 'active' class
     Array.from(blury).forEach(element => {
         element.classList.toggle("active-add-more");
     });
-    addMore.classList.add('hidden');
 
+    addMore.classList.add('hidden');
     createNote.classList.toggle('active-note')
 });
 
-let textInput = document.getElementById("textInput");
+let textInput    = document.getElementById("textInput");
 let submitButton = document.getElementById("submit");
-let errorMsg = document.getElementById("msg")
+let errorMsg     = document.getElementById("msg")
 
 function validation(){
     if(textInput.value === ""){
@@ -38,3 +40,8 @@ closeModal.addEventListener("click" , () => {
     addMore.classList.toggle('hidden');
 
 })
+
+// export function more(){
+
+    
+// };
