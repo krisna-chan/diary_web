@@ -6,6 +6,7 @@ addMore.addEventListener("click", () => {
     Array.from(blury).forEach(element => {
         element.classList.toggle("active-add-more");
     });
+    addMore.classList.add('hidden');
 
     createNote.classList.toggle('active-note')
 });
@@ -33,5 +34,7 @@ closeModal.addEventListener("click" , () => {
     Array.from(blury).forEach(element => {
         element.classList.toggle("active-add-more");
     });
+
+    addMore.classList.toggle('hidden');
+
 })
-console.log()
