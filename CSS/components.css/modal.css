@@ -1,3 +1,21 @@
 .active-add-more {
     filter: blur(20px);
 }
+
+.title{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: auto;
+}
+#more-note{
+    background:url(https://upload.wikimedia.org/wikipedia/commons/7/7a/Pixel_Art_Background.jpg);
+    background-position: center;
+    background-size: contain;
+}
+.modal-body{
+    flex-direction: column!important;
+}
+#msg{
+    color: #FF6969;
+}

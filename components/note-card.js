@@ -18,15 +18,20 @@ notes.forEach((note , index) =>{
     orangeLogo.setAttribute('height' , '80')
     orangeLogo.setAttribute('draggable' , 'false')
 
+    // ------- |place holder for note title| --------//
+    let noteTitle = document.createElement('h3')
+    noteTitle.classList.add('note-title');
+    noteTitle.innerHTML = 'place holder for note '
+
     //----- |appending image into image container| ----//
-    noteLogo.appendChild(orangeLogo)
+    noteLogo.append(orangeLogo , noteTitle)
     //------ |appending all children into the note element| ------//
 
     const pElement = document.createElement('form')
     pElement.classList.add('note-title')
 
     noteContent.append(noteLogo)
-    note.appendChild(noteContent ,)
+    note.appendChild(noteContent)
 })
 
 let noteContainer = [...document.getElementsByClassName('note')]
@@ -55,3 +60,4 @@ noteContainer.forEach((container , index) => {
     container.appendChild(crudElement)
 
 })
+

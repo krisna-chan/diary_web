@@ -1,7 +1,9 @@
 .note-content{
     border-radius:20px ;
     margin-top: 100px;
-    background-color: #f4c88b59;
+    background:url(https://media.istockphoto.com/id/1414387471/vector/simple-flat-pixel-art-illustration-of-cartoon-outdoor-landscape-background-pixel-arcade.jpg?s=612x612&w=0&k=20&c=ddkEw1uAjypuHH-wVtvawXm7cbUwhN6n7DOzVOwb1cE=);
+    background-position: center;
+    background-size: contain;
 }
 
 .note-logo{
@@ -20,6 +22,7 @@
     padding : 0px !important;
     margin: 0px !important;
 }
+
 .note-container{
     display: flex;
     flex-direction: column;
@@ -28,3 +31,10 @@
     margin: auto;
 }
 
+.note-logo{
+    display: flex;
+}
+
+.note-title{
+    text-overflow:ellipsis !important;
+}
