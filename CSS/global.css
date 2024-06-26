@@ -22,10 +22,17 @@ button:hover {
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em;
   }
+  *{
+    font-family: "Pixelify Sans", sans-serif;
+
+  }
 .crud-function {
     padding: 10px;
 }
-
+.mid {
+  display: flex;
+  margin: auto;
+}
 .form {
     --input-focus: #2d8cf0;
     --font-color: #323232;
@@ -50,7 +57,7 @@ button:hover {
   .title {
     color: var(--font-color);
     font-weight: 900;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 25px;
   }
   

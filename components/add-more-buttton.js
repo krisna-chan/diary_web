@@ -10,3 +10,28 @@ addMore.addEventListener("click", () => {
     createNote.classList.toggle('active-note')
 });
 
+let textInput = document.getElementById("textInput");
+let submitButton = document.getElementById("submit");
+let errorMsg = document.getElementById("msg")
+
+function validation(){
+    if(textInput.value === ""){
+        errorMsg.innerHTML = "Title must not be empty"
+    }else{
+        console.log("success")
+        errorMsg.innerHTML = ""
+    }
+}
+submitButton.addEventListener("click", () => {
+    validation();
+})
+
+
+let closeModal = document.getElementById("close")
+closeModal.addEventListener("click" , () => {
+    createNote.classList.toggle('active-note')
+    Array.from(blury).forEach(element => {
+        element.classList.toggle("active-add-more");
+    });
+})
+console.log()

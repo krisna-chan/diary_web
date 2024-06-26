@@ -26,10 +26,20 @@
 
     </main>
 
-    <section id="more-note" class="">
-        <form action="input">
-            <input type="text">
-        </form>
+    <section id="more-note" class="mid more-note">
+          <div class="modal-body mid">
+            <p>Task Title</p>
+            <input type="text" class="form-control" name="" id="textInput">
+            <div id="msg"></div>
+            <p>Description</p>
+            <textarea name="" class="form-control" id="textarea" cols="30" rows="5"></textarea>
+            <button type="submit" id="submit">
+              save note
+            </button>
+            <button id="close">
+                close
+            </button>
+          </div>
     </section>
     <div class="fixed-button">
         <button id="add-more" type="button" class="add-more">
@@ -37,8 +47,25 @@
         </button>
     </div>
 
+
+
+
+
+
+
+
+
+
+
 <form class="form">
-  <div class="title">Welcome,<br><span>sign up to continue</span></div>
+  <div class="title">
+    <img draggable="false" src="https://mystickermania.com/cdn/stickers/super-mario/mario-mushroom-pixel-512x512.png" width="70px" height="80px" alt="">
+    <h3>
+    Start writing
+    </h3>
+    <img draggable="false" src="https://mystickermania.com/cdn/stickers/super-mario/mario-mushroom-pixel-512x512.png" width="70px" height="80px" alt="">
+  <br>
+</div> 
   <input class="input" placeholder="Username" type="username">
   <input class="input" name="password" placeholder="Password" type="password">
   <button class="button-confirm">Sign In</button>
