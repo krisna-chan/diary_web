@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyDiary</title>
+
+
 <link rel="stylesheet" href="../CSS/global.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,21 +15,15 @@
     <header>
     </header>
     <main class="note-container blury">
-
-        <div class="note">
-        </div>
-        <div class="note">
-        </div>
-
     </main>
 
     <section id="more-note" class="mid more-note">
           <div class="modal-body mid">
-            <p>Task Title</p>
-            <input type="text" class="form-control" name="" id="textInput">
+            <p>Note title</p>
+            <input type="text" placeholder="Untitled" class="form-control" name="" id="textInput">
             <div id="msg"></div>
-            <p>Description</p>
-            <textarea name="" class="form-control" id="textarea" cols="30" rows="5"></textarea>
+            <p>what's on your mind today?</p>
+            <textarea name="" class="form-control" id="note-content" cols="30" rows="5"></textarea>
             <button type="submit" id="submit">
               save note
             </button>
@@ -37,22 +33,12 @@
           </div>
     </section>
     <div class="fixed-button">
-        <button id="add-more" type="button" class="add-more ">
+        <button id="add-more" type="button" class="add-more">
             add note
         </button>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-<form class="form">
+<div class="form sign-up-form">
   <div class="title">
     <img draggable="false" src="https://mystickermania.com/cdn/stickers/super-mario/mario-mushroom-pixel-512x512.png" width="70px" height="80px" alt="">
     <h3>
@@ -60,14 +46,17 @@
     </h3>
     <img draggable="false" src="https://mystickermania.com/cdn/stickers/super-mario/mario-mushroom-pixel-512x512.png" width="70px" height="80px" alt="">
   <br>
-</div> 
-  <input class="input" placeholder="Username" type="username">
-  <input class="input" name="password" placeholder="Password" type="password">
-  <button class="button-confirm">Sign In</button>
-</form>
+    </div> 
+  <input id="username-input" class="input" placeholder="Username" type="username">
+  <input id="password-input" class="input" name="password" placeholder="Password" type="password">
+  <button id="sign-in" class="button-confirm">Sign In</button>
+</div>
+
 </body>
-<script src="../components/navigation-bar.js"></script>
-<script src =  "../components/note-card.js"></script>
-<script src = "./components/add-more-buttton.js"></script>
-<script src="./index.js" type="module"></script>
+<!-- <script type="module" src="./index.js"></script> -->
+<script  src = "./components/add-more-buttton.js"></script> 
+<script src="./components/navigation-bar.js"></script>
+<!-- <script src =  "./components/note-card.js"></script> -->
+
+
 </html>
