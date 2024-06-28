@@ -73,4 +73,4 @@ function prepareEditNoteData(index) {
     });
     addMore.classList.toggle('hidden');
 
-})
+}
